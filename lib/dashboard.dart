@@ -10,18 +10,24 @@ class MyDashboard extends StatefulWidget {
 class _MyDashboardState extends State<MyDashboard> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white70,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage('assets/login.png'), fit: BoxFit.cover),
       ),
-      body: Center(
-        child: Text(
-          'Welcome User',
-          style: TextStyle(
-            fontSize: 40,
-            fontWeight: FontWeight.bold,
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
+        body: Center(
+          child: Text(
+            'Welcome User',
+            style: TextStyle(
+              fontSize: 40,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),
