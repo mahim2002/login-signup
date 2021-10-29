@@ -24,7 +24,7 @@ class _MyLoginState extends State<MyLogin> {
         body: Stack(
           children: [
             Container(
-              padding: EdgeInsets.only(left: 35, top: 90),
+              padding: EdgeInsets.only(left: 35, top: 80),
               child: Text(
                 'Welcome \nUser',
                 style: TextStyle(fontSize: 33, color: Colors.white),
