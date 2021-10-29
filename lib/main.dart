@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/login.dart';
 import 'package:myapp/register.dart';
+import 'dashboard.dart';
 
 void main() {
   runApp(
@@ -10,6 +11,7 @@ void main() {
       routes: {
         'login': (context) => MyLogin(),
         'register': (context) => MyRegister(),
+        'dashboard': (context) => MyDashboard(),
       },
     ),
   );
