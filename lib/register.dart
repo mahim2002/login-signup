@@ -21,17 +21,17 @@ class _MyRegisterState extends State<MyRegister> {
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
-        body: Stack(
-          children: [
-            Container(
-              padding: EdgeInsets.only(left: 35, top: 30),
-              child: Text(
-                'Create\nAccount',
-                style: TextStyle(color: Colors.white, fontSize: 33),
+        body: SingleChildScrollView(
+          child: Stack(
+            children: [
+              Container(
+                padding: EdgeInsets.only(left: 35, top: 30),
+                child: Text(
+                  'Create\nAccount',
+                  style: TextStyle(color: Colors.white, fontSize: 33),
+                ),
               ),
-            ),
-            SingleChildScrollView(
-              child: Container(
+              Container(
                 padding: EdgeInsets.only(
                     top: MediaQuery.of(context).size.height * 0.28),
                 child: Column(
@@ -164,8 +164,8 @@ class _MyRegisterState extends State<MyRegister> {
                   ],
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
